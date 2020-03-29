@@ -6,7 +6,10 @@ Free Small Business Sample Website based on StartBootsrap.
 
 ![SMB Sample Preview](https://ninexmobility.github.io/freesmbsample/img/screenshot.png)
 
-### [nineXmobilit](https://ninexmobility.com)
+## About nineXmobility [nineXmobility](https://ninexmobility.com)
+
+nineXmobility is a Moblity & Professional Services Consulting Company.
+During the COIVD-19 Crisis as people are in need of finding new ways to obtain employment online, we're offering free small business websites and Professional Presence consulting to those in need.
 
 ## About Start Bootstrap
 
