@@ -64,56 +64,38 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 offset-md-3">
-          <div class="form-wrapper">
-            <form action="https://formsubmit.co/wworland@gmail.com" method="POST" />
-              <!-- inputs -->
-              <div class="form-group">
-                <label class="sr-only" for="name">Name</label>
-                <div class="input-group">
-                  <div class="input-group-addon">
-                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                  </div>
-                  <input type="text" class="form-control" id="name" placeholder="Name">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="email">Email</label>
-                <div class="input-group">
-                  <div class="input-group-addon">
-                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                  </div>
-                  <input type="text" class="form-control" id="email" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="subject">Subject</label>
-                <div class="input-group">
-                  <div class="input-group-addon">
-                    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                  </div>
-                  <input type="text" class="form-control" id="subject" placeholder="Subject">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="message">Message</label>
-                <textarea class="form-control" id="message" rows="6" placeholder="Message"></textarea>
-              </div>
-    
-              <!-- buttons -->
-              <div class="btn-group pull-right" role="group">
-                <button type="reset" class="btn btn-default">
-                  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Reset
-                </button>
-                <button type="submit" class="btn btn-primary submit">
-                  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Submit
-                </button>
-              </div>
-            </form>
-          </div>
+          <form action="https://mailthis.to/wworland@gmail.com" method="POST" encType="multipart/form-data">
+            <h3>Contact Form (example)</h3>
+            <!-- Name -->
+            <input type="email" name="name" placeholder="Your name">
+            <!-- Email -->
+            <input type="email" name="email" placeholder="you@mail.com">
+            <!-- Phone Number -->
+            <input type="text" name="phone" placeholder="+1 (255) 555-5555">
+            <!-- Textarea (Message) -->
+            <textarea name="message" placeholder="Enter your message here" style="height:90px"></textarea>
+            <!-- File attachments 
+            <input type="file" name="file" placeholder="">-->
+          
+            <!-- Optional (hidden) fields -->
+            <!-- Custom email Subject -->
+            <input type="hidden" name="_subject" value="Contact form submitted">
+            <!-- Custom email ReplyTo Address -->
+            <input type="hidden" name="_replyto" value="company@youremail.com">
+            <!-- Redirect to a page after recaptcha -->
+            <input type="hidden" name="_after" value="https://ninexmobility.github.io/freesmbsample/">
+            <!-- Honeypot (to catch comment spam bots) -->
+            <input type="hidden" name="_honeypot" value="">
+            <!-- Apply a custom confirmation message on the second step -->
+            <input type="hidden" name="_confirmation" value="thankyou.html">
+          
+            <!-- Submit Button -->
+            <input type="submit" name="submit" value="Submit Form" class="btn btn-primary">
+          </form>
         </div>
       </div>
     </div>
-    <hr>
+  <hr>
   <!-- /.container -->
 
   <!-- Footer -->
