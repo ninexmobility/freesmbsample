@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body class="contact.body">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -61,77 +61,59 @@
   </header>
 
   <!-- Page Content -->
-  <div class="container">
-
-    <div class="row">
-      <div class="col-md-8 mb-5">
-        <h2>What We Do</h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-        <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
-      </div>
-      <div class="col-md-4 mb-5">
-        <h2>Contact Us</h2>
-        <hr>
-        <address>
-          <strong>Your Company Name</strong>
-          <br>123 AnyStreet
-          <br>Anytown, ZZ XXXXX
-          <br>
-        </address>
-        <address>
-          <abbr title="Phone">P:</abbr>
-          (123) 456-7890
-          <br>
-          <abbr title="Email">E:</abbr>
-          <a href="mailto:#">name@example.com</a>
-        </address>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="form-wrapper">
+            <form action="https://formsubmit.co/wworland@gmail.com" method="POST" />
+              <!-- inputs -->
+              <div class="form-group">
+                <label class="sr-only" for="name">Name</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                  </div>
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="email">Email</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                  </div>
+                  <input type="text" class="form-control" id="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="subject">Subject</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                  </div>
+                  <input type="text" class="form-control" id="subject" placeholder="Subject">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="message">Message</label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Message"></textarea>
+              </div>
+    
+              <!-- buttons -->
+              <div class="btn-group pull-right" role="group">
+                <button type="reset" class="btn btn-default">
+                  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Reset
+                </button>
+                <button type="submit" class="btn btn-primary submit">
+                  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Submit
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- /.row -->
 
-  </div>
   <!-- /.container -->
 
   <!-- Footer -->
@@ -141,6 +123,9 @@
     </div>
     <!-- /.container -->
   </footer>
+
+  <!-- Custom JavaScript-->
+  <script src="js/contact.js"></script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
